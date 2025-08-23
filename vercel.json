@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "drowsiness/package.json",
+      "use": "@vercel/next"
+    },
+    {
+      "src": "include/fastAPI/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/include/fastAPI/main.py"
+    }
+  ]
+}
