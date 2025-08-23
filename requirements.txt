@@ -3,4 +3,5 @@ ultralytics
 fastapi
 uvicorn
 numpy
+gunicorn
 opencv-python-headless
